@@ -1,0 +1,9 @@
+# Example Paper/Spigot server.properties (safe defaults for local demo)
+# Copy this file to server/server.properties and edit as needed
+
+enable-rcon=true
+rcon.port=25575
+rcon.password=CHANGE_ME
+server-ip=127.0.0.1
+online-mode=false
+# Other defaults are generated on first run

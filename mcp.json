@@ -1,0 +1,18 @@
+{
+  "servers": {
+    "minecraft-mcp": {
+      "command": "python",
+      "args": ["${workspaceFolder}/mcp_minecraft_server.py"],
+      "env": { "OPENAI_API_KEY": "${input:OPENAI_API_KEY}" },
+      "cwd": "${workspaceFolder}"
+    }
+  },
+  "inputs": [
+    {
+      "id": "OPENAI_API_KEY",
+      "type": "promptString",
+      "description": "OpenAI API key for NL→command translation",
+      "password": true
+    }
+  ]
+}
